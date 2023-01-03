@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Project2</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+                <img class="img" src="./leobank_210122.jpg" alt="#">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+        </header>
+        <form class="allForm" action="#" id="mainForm" onsubmit="return false;">
+            <div class="form">
+                <label for="contribution">Начальная сумма вклада ($)</label>
+                <input id="contribution"  type="text" value>
+            </div>
+            <div class="form">
+                <label for="time">Сумма пополнения:</label>
+                <select class="select" name="time" id="time">
+                  <option value="monthly">Ежемесячно</option>
+                  <option value="quarterly">Ежеквартально (каждые 3 месяца)</option>  
+                  <option value="annually">Ежегодно</option>
+                </select> 
+                <input id="refill" class="form__input" type="text" value>
+            </div>
+            <div class="form">
+                <label for="percent">Процентная ставка (%)</label>
+                <input id="percent" type="text" value>
+            </div>
+            <div class="form">
+                <label for="date">Срок вклада (дней)</label>
+                <input id="date" type="text" value>
+            </div>
+            <button id="btn" class="btn">Рассчитать</button>
+            <span class="error" id="error"></span>
+            <span class="number__error" id="number__error"></span>
+        </form>
+        <button class="game__btn" id="game__btn">Хотите поиграть?)</button>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div>
+                    <span>Можете связаться по номеру</span>
+                    <p>+994505138486</p>
+                </div>
+                <div>
+                    <img src="../Dananz/public/image/facebook.svg" alt="#">
+                    <img src="../Dananz/public/image/tiktok.svg" alt="#">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
